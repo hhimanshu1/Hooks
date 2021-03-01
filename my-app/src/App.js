@@ -1,11 +1,10 @@
 import React from "react";
-import {Route,Switch, Redirect} from 'react-router-dom';
-import TempApp from './Components/TempApp';
+import UseStateArray from './UseStateArray';
  
 const App=()=>{
   return (
     <>
-    < TempApp />
+    < UseStateArray  />
     </>
   );
 };
