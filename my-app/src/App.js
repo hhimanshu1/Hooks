@@ -5,8 +5,8 @@ import UseStateObject from './UseStateObject';
 const App=()=>{
   return (
     <>
-    {/* < UseStateArray  /> */}
-    < UseStateObject />
+    < UseStateArray  />
+    {/* < UseStateObject /> */}
     </>
   );
 };
