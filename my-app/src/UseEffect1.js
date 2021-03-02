@@ -3,10 +3,15 @@ import React,{useEffect, useState} from 'react';
   const UseEffect1 = () => {
       const[count, setCount]=useState(0);
       useEffect(()=>{
-        console.log("Himanshu");
-        document.title=`Chats${count}`;
-      });
-      console.log("Hemant");
+          if(count>=1)
+          document.title=`Chats${count}`;
+          else
+          document.title=`Chats`;
+      },[count]);  //this will renderd only when value of count changes
+      useEffect(()=>{
+        console.log("Hemant");
+      },[]);  //this will rendered only after first load
+      
     return (
         <div>
             <h1>{count}</h1>
